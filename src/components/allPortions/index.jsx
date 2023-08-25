@@ -21,7 +21,7 @@ const AllPortions = () => {
                                 <div>
                                     <h3 key={portion}>{portion.name}</h3>
                                     <p key={portion}>{portion.ingredients}</p>
-                                    <h2 key={portion}>{portion.price}</h2>
+                                    <h2 key={portion}>R$ {portion.price}</h2>
                                 </div>
                                 <a href=""><i class="fa-brands fa-whatsapp"></i>Pedir</a>
                             </div>

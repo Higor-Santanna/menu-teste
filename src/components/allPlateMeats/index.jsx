@@ -21,7 +21,7 @@ const AllPlateMeats = () => {
                                 <div>
                                     <h3 key={meat.id}>{meat.name}</h3>
                                     <p key={meat.id}>{meat.ingredients}</p>
-                                    <h2>{meat.price}</h2>
+                                    <h2>R$ {meat.price}</h2>
                                 </div>
                                 <a href=""><i class="fa-brands fa-whatsapp"></i>Pedir</a>
                             </div>
