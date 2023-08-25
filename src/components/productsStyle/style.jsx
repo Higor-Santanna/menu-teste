@@ -4,7 +4,6 @@ export const PriceAndOrder = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 4px;
 
     h2{
         font-weight: 600;
