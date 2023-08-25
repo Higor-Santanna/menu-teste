@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import productsJson from "../../json/products.json"
-import { Food, FoodMoreOrder, Order } from "../productsStyle/style"
+import { Food, PriceAndOrder, Order } from "../productsStyle/style"
 
 const AllBurguers = () => {
     const [burguer, setBurguer] = useState([])
@@ -17,17 +17,18 @@ const AllBurguers = () => {
                 burguer.map((burgue) => {
                     return (
                         <>
-                            <FoodMoreOrder>
-                                <Food>
-                                    <img src={burgue.image} border='0' alt='hamburguer' />
-                                    <div>
-                                        <h3 key={burgue.id}>{burgue.name}</h3>
-                                        <p key={burgue.id}>{burgue.ingredients}</p>
+
+                            <Food>
+                                <img src={burgue.image} border='0' alt='hamburguer' />
+                                <div>
+                                    <h3 key={burgue.id}>{burgue.name}</h3>
+                                    <p key={burgue.id}>{burgue.ingredients}</p>
+                                    <PriceAndOrder>
                                         <h2>R$ {burgue.price}</h2>
-                                    </div>
-                                </Food>
-                                <Order href=""><i class="fa-brands fa-whatsapp"></i></Order>
-                            </FoodMoreOrder>
+                                        <Order href=""><i class="fa-brands fa-whatsapp"></i></Order>
+                                    </PriceAndOrder>
+                                </div>
+                            </Food>
                         </>
                     )
                 })

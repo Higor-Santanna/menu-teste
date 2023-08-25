@@ -1,9 +1,22 @@
 import styled from "styled-components";
 
-export const FoodMoreOrder = styled.div`
+export const PriceAndOrder = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 4px;
+
+    h2{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 0;
+
+        @media(max-width: 500px){
+           font-size: 14px;
+           padding: 4px 0;
+        }
+    }
 `
 
 export const Order = styled.a`
@@ -17,7 +30,6 @@ export const Order = styled.a`
     font-size: 14px;
     color: #fff;
     font-weight: 400;
-    gap: 3px;
 
     i{
         background-color: #FF961B;
@@ -69,18 +81,6 @@ export const Food = styled.div`
             padding: 2px 0;
             font-size: 10px;
             width: 245px;
-        }
-    }
-
-    h2{
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        padding: 10px 0;
-
-        @media(max-width: 500px){
-           font-size: 14px;
-           padding: 4px 0;
         }
     }
 `
