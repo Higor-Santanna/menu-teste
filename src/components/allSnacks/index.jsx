@@ -24,7 +24,7 @@ const AllSnacks = () => {
                                     <p key={snac.id}>{snac.ingredients}</p>
                                     <PriceAndOrder>
                                         <h2>R$ {snac.price}</h2>
-                                        <Order href=""><i class="fa-brands fa-whatsapp"></i>Pedir</Order>
+                                        <Order href=""><i class="fa-brands fa-whatsapp"></i></Order>
                                     </PriceAndOrder>
                                 </div>
                             </Food>

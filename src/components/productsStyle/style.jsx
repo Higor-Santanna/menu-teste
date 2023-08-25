@@ -35,7 +35,7 @@ export const Order = styled.a`
     }
 
     @media(max-width: 500px){
-        width: 30px;
+        width: 40px;
         height: 30px;
     }
 `
@@ -44,6 +44,10 @@ export const Food = styled.div`
     display: flex;
     align-items: center;
     padding: 10px 0;
+
+    @media(max-width: 500px){
+        justify-content: center;
+    }
 
     img{
         width: 100px; 
