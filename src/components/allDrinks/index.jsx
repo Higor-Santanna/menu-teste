@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import productsJson from "../../json/products.json"
-import { Food } from "../productsStyle/style"
+import { Food, PriceAndOrder, Order } from "../productsStyle/style"
 
 const AllDrinks = () => {
     const [drinks, setDrinks] = useState([])
@@ -12,7 +12,7 @@ const AllDrinks = () => {
         setDrinks(products)
     }, [])
     return (
-        <div key={drinks}>
+        <div>
             {drinks.length > 0 ? (
                 drinks.map((drink) => {
                     return (
@@ -22,10 +22,12 @@ const AllDrinks = () => {
                                 <div>
                                     <h3 key={drink}>{drink.name}</h3>
                                     <p key={drink}>{drink.ingredients}</p>
-                                    <h2 key={drink}>R$ {drink.price}</h2>
+                                    <PriceAndOrder>
+                                        <h2>R$ {drink.price}</h2>
+                                        <Order href=""><i class="fa-brands fa-whatsapp"></i></Order>
+                                    </PriceAndOrder>
                                 </div>
                             </Food>
-                            <a href=""><i class="fa-brands fa-whatsapp"></i>Pedir</a>
                         </>
                     )
                 })

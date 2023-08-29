@@ -12,12 +12,11 @@ const AllBurguers = () => {
         setBurguer(products)
     }, [])
     return (
-        <div key={burguer}>
+        <div>
             {burguer.length > 0 ? (
                 burguer.map((burgue) => {
                     return (
                         <>
-
                             <Food>
                                 <img src={burgue.image} border='0' alt='hamburguer' />
                                 <div>

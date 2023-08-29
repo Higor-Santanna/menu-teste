@@ -49,6 +49,10 @@ export const MenuNameLogo = styled.div`
     h2{
         font-size: 20px;
         font-weight: 800;
+
+        @media(max-width: 375px){
+            font-size: 18px;
+        }
     }
 
     a{
@@ -68,4 +72,24 @@ export const MenuDeliveryTime = styled.div`
     border-radius: 4px;
     padding: 8px 12px;
     margin: 15px 22px;
+`
+
+export const DivModal = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3{
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    button{
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        color: #000;
+    }
 `

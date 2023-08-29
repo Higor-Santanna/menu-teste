@@ -83,7 +83,15 @@ export const Food = styled.div`
         @media(max-width: 500px){
             padding: 2px 0;
             font-size: 10px;
-            width: 245px;
+            width: 255px;
+        }
+
+        @media(max-width: 375px){
+            width: 215px;
+        }
+
+        @media(max-width: 320px){
+            width: 195px;
         }
     }
 `

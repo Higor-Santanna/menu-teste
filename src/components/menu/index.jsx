@@ -1,8 +1,22 @@
+import React, { useState } from "react"
+import Modal from "react-modal"
 import capa from "../../assets/burguerDesktop.png"
 import logo from "../../assets/logo.png"
-import { MenuCapa, MenuNameLogo, MenuDeliveryTime, ButtonOpenClosed } from "./style"
+import { Modall } from "../modal"
+import { MenuCapa, MenuNameLogo, MenuDeliveryTime, ButtonOpenClosed, DivModal } from "./style"
+import "../../App.css"
 
 const Menu = () => {
+    const [ openModal, setOpenModal ] = useState(false)
+
+    function modalClose(){
+        setOpenModal(false)
+    }
+
+    function modalOpen(){
+        setOpenModal(true)
+    }
+
     return (
         <>
             <MenuCapa>
@@ -18,15 +32,26 @@ const Menu = () => {
             <MenuNameLogo>
                 <img src={logo} alt="Logo" />
                 <div>
-                    <h2>Smaniotto's Beer e Cia</h2>
+                    <h2>Burguer e Cia</h2>
                     <div>
-                        <a href="">
+                        <a onClick={modalOpen}>
                             <i class="fa-solid fa-circle-info"></i>
                         </a>
                         <a href="">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
+                    <Modal isOpen={openModal}
+                    onRequestClose={modalClose}
+                    >
+                        <DivModal>
+                            <h3>Informação</h3>
+                            <button onClick={modalClose}>
+                                <i class="fa-solid fa-x"></i>  
+                            </button>
+                        </DivModal>
+                        <Modall></Modall>                    
+                    </Modal>
                 </div>
             </MenuNameLogo>
             <MenuDeliveryTime>
