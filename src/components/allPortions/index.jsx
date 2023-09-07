@@ -7,28 +7,27 @@ const AllPortions = () => {
 
     useEffect(() => {
         const products = productsJson.data[0].portions
-        console.log(products)
-
+        
         setPortions(products)
     }, [])
     return (
         <div>
             {portions.length > 0 ? (
-                portions.map((portion) => {
+                portions.map((portion, index) => {
                     return (
-                        <>
+                        <div key={index}>
                             <Food>
                                 <img src={portion.image} border='0' alt='hamburguer' />
                                 <div>
-                                    <h3 key={portion}>{portion.name}</h3>
-                                    <p key={portion}>{portion.ingredients}</p>
+                                    <h3 >{portion.name}</h3>
+                                    <p >{portion.ingredients}</p>
                                     <PriceAndOrder>
                                         <h2>R$ {portion.price}</h2>
                                         <Order href=""><i class="fa-brands fa-whatsapp"></i></Order>
                                     </PriceAndOrder>
                                 </div>
                             </Food>
-                        </>
+                        </div>
                     )
                 })
             ) : (

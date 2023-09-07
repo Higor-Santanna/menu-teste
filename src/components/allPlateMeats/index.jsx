@@ -7,28 +7,27 @@ const AllPlateMeats = () => {
 
     useEffect(() => {
         const products = productsJson.data[0]["plate-meats"]
-        console.log(products)
 
         setPlateMeats(products)
     }, [])
     return (
         <div>
             {plateMeats.length > 0 ? (
-                plateMeats.map((meat) => {
+                plateMeats.map((meat, index) => {
                     return (
-                        <>
+                        <div key={index}>
                             <Food>
                                 <img src={meat.image} border='0' alt='hamburguer' />
                                 <div>
-                                    <h3 key={meat.id}>{meat.name}</h3>
-                                    <p key={meat.id}>{meat.ingredients}</p>
+                                    <h3>{meat.name}</h3>
+                                    <p>{meat.ingredients}</p>
                                     <PriceAndOrder>
                                         <h2>R$ {meat.price}</h2>
                                         <Order href=""><i class="fa-brands fa-whatsapp"></i></Order>
                                     </PriceAndOrder>
                                 </div>
                             </Food>
-                        </>
+                        </div>
                     )
                 })
             ) : (

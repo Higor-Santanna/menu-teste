@@ -1,33 +1,35 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Modal from "react-modal"
 import capa from "../../assets/burguerDesktop.png"
 import logo from "../../assets/logo.png"
 import { Modall } from "../modal"
-import { MenuCapa, MenuNameLogo, MenuDeliveryTime, ButtonOpenClosed, DivModal } from "./style"
+import { MenuCapa, MenuNameLogo, MenuDeliveryTime, DivModal, Line } from "./style"
 import "../../App.css"
+import { OpenAndClose } from "../OpenAndClose"
 
 const Menu = () => {
     const [ openModal, setOpenModal ] = useState(false)
 
-    function modalClose(){
+    const modalClose = () => {
         setOpenModal(false)
     }
 
-    function modalOpen(){
+    const modalOpen = () => {
         setOpenModal(true)
     }
+
+    useEffect(() => {
+        modalOpen();
+        modalClose();
+    }, [])
 
     return (
         <>
             <MenuCapa>
                 <img src={capa} alt="capa"></img>
-                <ButtonOpenClosed>
-                    <a>
-                        <i class="fa-regular fa-circle-dot"></i>
-                        <p>Aberto</p>
-                        <i class="fa-regular fa-clock"></i>
-                    </a> 
-                </ButtonOpenClosed>
+                <div>
+                    <OpenAndClose />
+                </div>
             </MenuCapa>
             <MenuNameLogo>
                 <img src={logo} alt="Logo" />
@@ -50,6 +52,7 @@ const Menu = () => {
                                 <i class="fa-solid fa-x"></i>  
                             </button>
                         </DivModal>
+                        <Line />
                         <Modall></Modall>                    
                     </Modal>
                 </div>

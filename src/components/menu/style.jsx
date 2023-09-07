@@ -14,26 +14,26 @@ export const MenuCapa = styled.div`
     }   
 `
 
-export const ButtonOpenClosed = styled.div`
-    a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 133px;
-        height: 30px;
-        background-color: #DCD4CC;
-        border-radius: 3px;
-        font-weight: 600;
-        font-size: 14px;
-        gap: 5px;
-        border: 1px solid black;
-        transform: translateY(-180px);
-    }
+// export const ButtonOpenClosed = styled.div`
+//     a{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         width: 133px;
+//         height: 30px;
+//         background-color: #DCD4CC;
+//         border-radius: 3px;
+//         font-weight: 600;
+//         font-size: 14px;
+//         gap: 5px;
+//         border: 1px solid black;
+//         transform: translateY(-180px);
+//     }
 
-    i, p{
-        background-color: #DCD4CC;
-    }
-`
+//     i, p{
+//         background-color: #DCD4CC;
+//     }
+// `
 
 export const MenuNameLogo = styled.div`
     display: flex;
@@ -92,4 +92,11 @@ export const DivModal = styled.div`
         cursor: pointer;
         color: #000;
     }
+`
+
+export const Line = styled.div`
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #9e9e9e;
 `

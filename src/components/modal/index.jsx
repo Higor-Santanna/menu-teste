@@ -1,14 +1,14 @@
 import React from "react";
 import logo from "../../assets/logo.png"
-import { OpenAndClose, NameAndSoon, Whatsapp, Location, ListServices, Caption, DeliveryTime, OpeningHours } from "./style";
+import { OpenAndClose, NameAndSoon, Whatsapp, Location, ListServices, Caption, DeliveryTime, OpeningHours, Line, Delivery, RemoveStore, MotoDelivery, Strong } from "./style";
+import { DaysOfWeek } from "../daysOfWeek";
+import { CloseAndOpen } from "./closeAndOpen";
 
 const Modall = () => {
     return (
         <>
             <OpenAndClose>
-                <i class="fa-regular fa-circle-dot"></i>
-                <p>Fechado</p>
-                <i class="fa-regular fa-clock"></i>
+                <CloseAndOpen></CloseAndOpen>
             </OpenAndClose>
 
             <NameAndSoon>
@@ -20,6 +20,8 @@ const Modall = () => {
                 <i class="fa-brands fa-whatsapp"></i>
             </Whatsapp>
 
+            <Line />
+
             <Caption>Endereço</Caption>
             <Location href="">
                 <i class="fa-solid fa-location-dot"></i>
@@ -28,72 +30,33 @@ const Modall = () => {
 
             <Caption>Modos de entrega</Caption>
             <ListServices>
-                <li>
-                    <i class="fa-solid fa-shop"></i>
-                    <p>Retirar na Loja</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-motorcycle"></i>
-                    <p>Delivery</p>
-                </li>
-                <DeliveryTime>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>Tempo de entrega em casa <strong>
-                        40 - 70min.</strong></p>
-                </DeliveryTime>
+                <RemoveStore>
+                    <div>
+                        <i class="fa-solid fa-shop"></i>
+                        <p>Retirar na Loja</p>
+                    </div>
+                    <i class="fa-solid fa-check"></i>
+                </RemoveStore>
+                <Delivery>
+                    <MotoDelivery>
+                        <div>
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <p>Delivery</p>
+                        </div>
+                        <i class="fa-solid fa-check"></i>
+                    </MotoDelivery>
+    
+                    <DeliveryTime>
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Tempo de entrega em casa <Strong>
+                            40 - 70min.</Strong></p>
+                    </DeliveryTime>
+                </Delivery>
             </ListServices>
 
             <Caption>Horário de funcionamento</Caption>
             <OpeningHours>
-                <li>
-                    <p>Domingo</p>
-                    <div>
-                        <i class="fa-regular fa-clock"></i>
-                        <p>18:00 - 23:30</p>
-                    </div>
-                </li>
-                <li>
-                    <p>Segunda-feira</p>
-                    <div>
-                        <i class="fa-regular fa-clock"></i>
-                        <p>Fechado</p>
-                    </div>
-                </li>
-                <li>
-                    <p>Terça-feira</p>
-                    <div>
-                        <i class="fa-regular fa-clock"></i>
-                        <p>06:00 - 23:00</p>
-                    </div>
-                </li>
-                <li>
-                    <p>Quarta-Feira</p>
-                    <div>
-                        <i class="fa-regular fa-clock"></i>
-                        <p>18:00 - 23:00</p>
-                    </div>
-                </li>
-                <li>
-                    <p>Quinta-Feira</p>
-                    <div>
-                        <i class="fa-regular fa-clock"></i>
-                        <p>18:00 - 23:00</p>
-                    </div>
-                </li>
-                <li>
-                    <p>Sexta-Feira</p>
-                    <div>
-                        <i class="fa-regular fa-clock"></i>
-                        <p>18:00 - 23:00</p>
-                    </div>
-                </li>
-                <li>
-                    <p>Sábado</p>
-                    <div>
-                        <i class="fa-regular fa-clock"></i>
-                        <p>18:00 - 23:00</p>
-                    </div>
-                </li>
+                <DaysOfWeek></DaysOfWeek>
             </OpeningHours>
         </>
     )

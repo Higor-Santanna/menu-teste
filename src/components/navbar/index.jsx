@@ -15,7 +15,7 @@ import { margin } from './style';
 export function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
 
-  const handleChange = (panel) => (event, isExpanded) => {
+  const handleChange = (panel) => (isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
 

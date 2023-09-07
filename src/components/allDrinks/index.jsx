@@ -7,28 +7,27 @@ const AllDrinks = () => {
 
     useEffect(() => {
         const products = productsJson.data[0].drinks
-        console.log(products)
-
+        
         setDrinks(products)
     }, [])
     return (
         <div>
             {drinks.length > 0 ? (
-                drinks.map((drink) => {
+                drinks.map((drink, index) => {
                     return (
-                        <>
+                        <div key={index}>
                             <Food>
                                 <img src={drink.image} border='0' alt='hamburguer' />
                                 <div>
-                                    <h3 key={drink}>{drink.name}</h3>
-                                    <p key={drink}>{drink.ingredients}</p>
+                                    <h3 >{drink.name}</h3>
+                                    <p >{drink.ingredients}</p>
                                     <PriceAndOrder>
                                         <h2>R$ {drink.price}</h2>
                                         <Order href=""><i class="fa-brands fa-whatsapp"></i></Order>
                                     </PriceAndOrder>
                                 </div>
                             </Food>
-                        </>
+                        </div>
                     )
                 })
             ) : (

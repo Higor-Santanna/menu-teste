@@ -1,0 +1,9 @@
+.highlighted {
+    border-radius: 4px;
+    background-color: #FF961B;
+}
+
+.highlighted div, .highlighted p, .highlighted i{
+    color: white;
+    background-color: #FF961B ;
+}
