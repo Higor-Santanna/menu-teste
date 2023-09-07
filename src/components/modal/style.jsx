@@ -1,4 +1,3 @@
-import { ExposureSharp } from "@mui/icons-material";
 import styled from "styled-components";
 
 export const OpenAndClose = styled.div`
@@ -29,12 +28,21 @@ export const NameAndSoon = styled.div`
         font-size: 23px;
         font-weight: 700;
         line-height: 28px;
+
+        @media(max-width: 414px){
+            font-size: 20px;
+        }
     }
 
     img{
         width: 32px;
         height: 32px;
         border-radius: 4px;
+
+        @media(max-width: 414px){
+            width: 30px;
+            height: 30px;
+        }
     }
 `
 
@@ -52,6 +60,10 @@ export const Caption = styled.h3`
     font-weight: 600;
     line-height: 20px;
     margin: 17px 0 8px 0;
+
+    @media(max-width: 414px){
+            font-size: 15px;
+        }
 `
 export const Location = styled.a`
     display: flex;
@@ -65,6 +77,9 @@ export const Location = styled.a`
 
     p{
         font-size: 14px;
+        @media(max-width: 414px){
+            font-size: 12px;
+        }
     }
 `
 export const ListServices = styled.ul`
@@ -89,19 +104,21 @@ export const RemoveStore = styled.li`
         display: flex;
         align-items: center;
         gap: 5px;
+
+        @media(max-width: 414px){
+            font-size: 12px;
+        }
     }
 
     i{
-        color: #FF961B 
+        color: #FF961B; 
+        @media(max-width: 414px){
+            font-size: 14px;
+        }
     }
 `
 
 export const Delivery = styled.li`
-    /* display: flex;
-    flex-direction: column;
-    /* border: 1px solid #9e9e9e; 
-    padding: 0 5px;
-    border-radius: 4px; */
     border-radius: 4px;
     border: 1px solid #9e9e9e;
 `
@@ -122,10 +139,16 @@ export const MotoDelivery = styled.div`
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
+        @media(max-width: 414px){
+            font-size: 12px;
+        }
     }
 
     i{
-        color: #FF961B 
+        color: #FF961B;
+        @media(max-width: 414px){
+            font-size: 14px;
+        }
     }
 `
 
@@ -141,6 +164,9 @@ export const DeliveryTime = styled.div`
     i{
         color: #000;
         background-color: #c7c7c7;
+        @media(max-width: 414px){
+            font-size: 12px;
+        }
     }
 
     p{
@@ -149,7 +175,10 @@ export const DeliveryTime = styled.div`
         line-height: 16px;
         background-color: #c7c7c7;
         display: flex;
-        gap: 5px;
+        gap: 3px;
+        @media(max-width: 414px){
+            font-size: 11px;
+        }
     }
 `
 
@@ -166,6 +195,10 @@ export const OpeningHours = styled.ul`
         padding: 3px 8px;
         font-size: 14px;
         font-weight: 400;
+
+        @media(max-width: 414px){
+            font-size: 12px;
+        }
     }
 
     div{

@@ -48,7 +48,7 @@ const Modall = () => {
     
                     <DeliveryTime>
                         <i class="fa-regular fa-clock"></i>
-                        <p>Tempo de entrega em casa <Strong>
+                        <p>Tempo de entrega <Strong>
                             40 - 70min.</Strong></p>
                     </DeliveryTime>
                 </Delivery>
