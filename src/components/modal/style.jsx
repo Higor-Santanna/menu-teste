@@ -1,19 +1,7 @@
 import styled from "styled-components";
 
 export const OpenAndClose = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 3px;
     margin: 20px 0 5px 0;
-
-    i{
-        font-size: 14px;
-    }
-
-    p{
-        font-size: 14px;
-        font-weight: 600;
-    }
 `
 
 export const NameAndSoon = styled.div`
@@ -176,13 +164,18 @@ export const DeliveryTime = styled.div`
         background-color: #c7c7c7;
         display: flex;
         gap: 3px;
+
         @media(max-width: 414px){
             font-size: 11px;
+        }
+
+        @media(max-width: 320px){
+            font-size: 10px;
         }
     }
 `
 
-export const Strong = styled.div`
+export const Strong = styled.span`
     background-color: #c7c7c7;
     font-weight: 700;
 `

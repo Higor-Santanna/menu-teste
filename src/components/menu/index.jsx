@@ -37,19 +37,20 @@ const Menu = () => {
                     <h2>Burguer e Cia</h2>
                     <div>
                         <a onClick={modalOpen}>
-                            <i class="fa-solid fa-circle-info"></i>
+                            <i className="fa-solid fa-circle-info"></i>
                         </a>
                         <a href="">
-                            <i class="fa-brands fa-whatsapp"></i>
+                            <i className="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
                     <Modal isOpen={openModal}
                     onRequestClose={modalClose}
+                    ariaHideApp={false}
                     >
-                        <DivModal>
+                        <DivModal  ariaHideApp={false}>
                             <h3>Informação</h3>
                             <button onClick={modalClose}>
-                                <i class="fa-solid fa-x"></i>  
+                                <i className="fa-solid fa-x"></i>  
                             </button>
                         </DivModal>
                         <Line />
@@ -58,7 +59,7 @@ const Menu = () => {
                 </div>
             </MenuNameLogo>
             <MenuDeliveryTime>
-                <i class="fa-solid fa-motorcycle"></i>
+                <i className="fa-solid fa-motorcycle"></i>
                 <p>40 - 70min.</p>
             </MenuDeliveryTime>
         </>

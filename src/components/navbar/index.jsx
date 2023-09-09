@@ -29,12 +29,12 @@ export function ControlledAccordions() {
           id="panel1bh-header"
           style={margin}
         >
-          <Typography>
+          <Typography component={'span'}>
             Petiscos
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography component={'span'}>
             <AllSnacks />
           </Typography>
         </AccordionDetails>
@@ -46,12 +46,12 @@ export function ControlledAccordions() {
           id="panel2bh-header"
           style={margin}
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+          <Typography sx={{ width: '33%', flexShrink: 0 }} component={'span'}>
             Bebidas
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography component={'span'}>
             <AllDrinks />
           </Typography>
         </AccordionDetails>
@@ -63,12 +63,12 @@ export function ControlledAccordions() {
           id="panel3bh-header"
           style={margin}
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+          <Typography sx={{ width: '33%', flexShrink: 0 }} component={'span'}>
             Lanches
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography component={'span'}>
             <AllBurguers />
           </Typography>
         </AccordionDetails>
@@ -80,10 +80,10 @@ export function ControlledAccordions() {
           id="panel4bh-header"
           style={margin}
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>Porções</Typography>
+          <Typography sx={{ width: '33%', flexShrink: 0 }} component={'span'}>Porções</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography component={'span'}>
             <AllPortions />
           </Typography>
         </AccordionDetails>
@@ -95,10 +95,10 @@ export function ControlledAccordions() {
           id="panel5bh-header"
           style={margin}
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>Carnes na Chapa</Typography>
+          <Typography sx={{ width: '33%', flexShrink: 0 }}component={'span'}>Carnes na Chapa</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography component={'span'}>
             <AllPlateMeats />
           </Typography>
         </AccordionDetails>

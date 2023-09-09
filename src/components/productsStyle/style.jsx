@@ -4,6 +4,7 @@ export const PriceAndOrder = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
     h2{
         font-weight: 600;
@@ -63,6 +64,7 @@ export const Food = styled.div`
 
     div{
         margin-left: 10px;
+        width: 100%;
     }
 
     h3{
@@ -86,12 +88,16 @@ export const Food = styled.div`
             width: 255px;
         }
 
+        @media(max-width: 384px){
+            width: 245px;
+        }
+
         @media(max-width: 375px){
             width: 215px;
         }
 
         @media(max-width: 320px){
-            width: 195px;
+            width: 180px;
         }
     }
 `

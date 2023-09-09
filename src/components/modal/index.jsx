@@ -17,14 +17,14 @@ const Modall = () => {
             </NameAndSoon>
 
             <Whatsapp href="">
-                <i class="fa-brands fa-whatsapp"></i>
+                <i className="fa-brands fa-whatsapp"></i>
             </Whatsapp>
 
             <Line />
 
             <Caption>Endereço</Caption>
             <Location href="">
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
                 <p>BR-101, 13729 - Pedro Canário, ES, 29970-000, Brasil</p>
             </Location>
 
@@ -32,22 +32,22 @@ const Modall = () => {
             <ListServices>
                 <RemoveStore>
                     <div>
-                        <i class="fa-solid fa-shop"></i>
+                        <i className="fa-solid fa-shop"></i>
                         <p>Retirar na Loja</p>
                     </div>
-                    <i class="fa-solid fa-check"></i>
+                    <i className="fa-solid fa-check"></i>
                 </RemoveStore>
                 <Delivery>
                     <MotoDelivery>
                         <div>
-                            <i class="fa-solid fa-motorcycle"></i>
+                            <i className="fa-solid fa-motorcycle"></i>
                             <p>Delivery</p>
                         </div>
-                        <i class="fa-solid fa-check"></i>
+                        <i className="fa-solid fa-check"></i>
                     </MotoDelivery>
     
                     <DeliveryTime>
-                        <i class="fa-regular fa-clock"></i>
+                        <i className="fa-regular fa-clock"></i>
                         <p>Tempo de entrega <Strong>
                             40 - 70min.</Strong></p>
                     </DeliveryTime>

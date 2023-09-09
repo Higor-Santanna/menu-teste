@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import productsJson from "../../json/products.json"
-import { Food, PriceAndOrder , Order } from "../productsStyle/style"
+import { Food, Order, PriceAndOrder } from "../productsStyle/style"
 
 const AllSnacks = () => {
     const [snack, setSnacks] = useState([])
@@ -23,7 +23,7 @@ const AllSnacks = () => {
                                     <p >{snac.ingredients}</p>
                                     <PriceAndOrder>
                                         <h2>R${snac.price}</h2>
-                                        <Order href=""><i class="fa-brands fa-whatsapp"></i></Order>
+                                        <Order href=""><i className="fa-brands fa-whatsapp"></i></Order>
                                     </PriceAndOrder>
                                 </div>
                             </Food>

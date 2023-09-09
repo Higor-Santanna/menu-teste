@@ -23,7 +23,7 @@ const AllBurguers = () => {
                                     <p >{burgue.ingredients}</p>
                                     <PriceAndOrder>
                                         <h2>R$ {burgue.price}</h2>
-                                        <Order href=""><i class="fa-brands fa-whatsapp"></i></Order>
+                                        <Order href=""><i className="fa-brands fa-whatsapp"></i></Order>
                                     </PriceAndOrder>
                                 </div>
                             </Food>

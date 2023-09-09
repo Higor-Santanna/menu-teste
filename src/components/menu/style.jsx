@@ -14,27 +14,6 @@ export const MenuCapa = styled.div`
     }   
 `
 
-// export const ButtonOpenClosed = styled.div`
-//     a{
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         width: 133px;
-//         height: 30px;
-//         background-color: #DCD4CC;
-//         border-radius: 3px;
-//         font-weight: 600;
-//         font-size: 14px;
-//         gap: 5px;
-//         border: 1px solid black;
-//         transform: translateY(-180px);
-//     }
-
-//     i, p{
-//         background-color: #DCD4CC;
-//     }
-// `
-
 export const MenuNameLogo = styled.div`
     display: flex;
     gap: 15px;
