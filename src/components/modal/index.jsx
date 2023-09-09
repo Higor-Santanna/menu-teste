@@ -16,14 +16,14 @@ const Modall = () => {
                 <img src={logo}></img>
             </NameAndSoon>
 
-            <Whatsapp href="">
+            <Whatsapp href="https://wa.me/5527999092983?text=Ol%C3%A1%2C+quero+fazer+um+pedido..." target="_blank">
                 <i className="fa-brands fa-whatsapp"></i>
             </Whatsapp>
 
             <Line />
 
             <Caption>Endereço</Caption>
-            <Location href="">
+            <Location href="https://goo.gl/maps/UD7GcrenQ5m4jfRX7" target="_blank">
                 <i className="fa-solid fa-location-dot"></i>
                 <p>BR-101, 13729 - Pedro Canário, ES, 29970-000, Brasil</p>
             </Location>

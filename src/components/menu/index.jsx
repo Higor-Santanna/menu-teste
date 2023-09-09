@@ -39,7 +39,7 @@ const Menu = () => {
                         <a onClick={modalOpen}>
                             <i className="fa-solid fa-circle-info"></i>
                         </a>
-                        <a href="">
+                        <a href="https://wa.me/5527999092983?text=Ol%C3%A1%2C+quero+fazer+um+pedido..." target="_blank">
                             <i className="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
