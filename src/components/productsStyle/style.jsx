@@ -1,22 +1,19 @@
 import styled from "styled-components";
 
-export const PriceAndOrder = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+export const Title = styled.h2`
+    text-align: center;
+    font-size: 21px;
+    padding: 2px;
+    background-color: #c7c7c7;
+`
 
-    h2{
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        padding: 10px 0;
+export const Price = styled.h4`
+    font-weight: 600;
+    font-size: 16px;
 
-        @media(max-width: 500px){
-           font-size: 14px;
-           padding: 4px 0;
-        }
-    }
+    @media(max-width: 500px){
+        font-size: 13.5px;
+    }  
 `
 
 export const Order = styled.a`
@@ -44,21 +41,21 @@ export const Order = styled.a`
 export const Food = styled.div`
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px;
 
     @media(max-width: 500px){
         justify-content: center;
     }
 
     img{
-        width: 100px; 
-        height: 100px;
+        width: 130px; 
+        height: 130px;
         object-fit: cover;
         border-radius: 4px;
 
         @media(max-width: 500px){
-            width: 90px; 
-            height: 90px;
+            width: 125px; 
+            height: 125px;
         }
     }
 
@@ -69,22 +66,22 @@ export const Food = styled.div`
 
     h3{
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 20px;
 
         @media(max-width: 500px){
-            font-size: 14px;
+            font-size: 15px;
         }
     }
 
     p{
         font-size: 12px;
-        color: #9D9D9D;
+        color: #4b4b4b;
         padding: 6px 0;
 
         @media(max-width: 500px){
             padding: 2px 0;
-            font-size: 10px;
+            font-size: 11px;
             width: 255px;
         }
 
@@ -101,4 +98,3 @@ export const Food = styled.div`
         }
     }
 `
-

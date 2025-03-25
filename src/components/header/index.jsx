@@ -1,13 +1,15 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react"
 import Modal from "react-modal"
 import capa from "../../assets/burguerDesktop.png"
 import logo from "../../assets/logo.png"
 import { Modall } from "../modal"
 import { MenuCapa, MenuNameLogo, MenuDeliveryTime, DivModal, Line } from "./style"
-import "../../App.css"
 import { OpenAndClose } from "../OpenAndClose"
+import { SearchBar } from "../SearchBar/searchBar"
+import { CartButton } from "../CartButton/cartButton"
 
-const Menu = () => {
+const Header = () => {
     const [ openModal, setOpenModal ] = useState(false)
 
     const modalClose = () => {
@@ -39,7 +41,7 @@ const Menu = () => {
                         <a onClick={modalOpen}>
                             <i className="fa-solid fa-circle-info"></i>
                         </a>
-                        <a href="https://wa.me/5527999092983?text=Ol%C3%A1%2C+quero+fazer+um+pedido..." target="_blank">
+                        <a href="https://wa.me/5527999092983?text=Ol%C3%A1%2C+quero+fazer+um+pedido..." target="_blank" rel="noreferrer">
                             <i className="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
@@ -60,10 +62,14 @@ const Menu = () => {
             </MenuNameLogo>
             <MenuDeliveryTime>
                 <i className="fa-solid fa-motorcycle"></i>
-                <p>40 - 70min.</p>
+                <p>Entrega: R$ 2,00 | 40 - 70min</p>
             </MenuDeliveryTime>
+            <div>
+                <SearchBar></SearchBar>
+                <CartButton></CartButton>
+            </div>
         </>
     )
 }
 
-export { Menu }
+export { Header }

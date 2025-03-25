@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react"
 import productsJson from "../../json/products.json"
 import { Food, PriceAndOrder, Order } from "../productsStyle/style"

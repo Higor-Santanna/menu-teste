@@ -1,30 +1,32 @@
-import React, { useState, useEffect } from "react"
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect, useContext } from "react"
 import productsJson from "../../json/products.json"
-import { Food, PriceAndOrder, Order } from "../productsStyle/style"
+import { Food, Price, Title} from "../productsStyle/style"
+import { AppContext } from "../../context/App.context"
 
 const AllBurguers = () => {
-    const [burguer, setBurguer] = useState([])
+    const { burguer, setBurguer } = useContext(AppContext)
 
     useEffect(() => {
-        const products = productsJson.data[0].burguers
+        const products = productsJson.data[0].burguersTraditional
 
         setBurguer(products)
-    }, [])
+    }, [setBurguer])
     return (
         <div>
+            <Title>Lanches Tradicionais</Title>
             {burguer.length > 0 ? (
-                burguer.map((burgue, index) => {
+                burguer.map((burgue) => {
                     return (
-                        <div key={index}>
+                        <div key={burgue.id}>
                             <Food>
                                 <img src={burgue.image} border='0' alt='hamburguer' />
                                 <div>
                                     <h3>{burgue.name}</h3>
                                     <p >{burgue.ingredients}</p>
-                                    <PriceAndOrder>
-                                        <h2>R$ {burgue.price}</h2>
-                                        <Order href={burgue.whatsapp} target="_blank"><i className="fa-brands fa-whatsapp"></i></Order>
-                                    </PriceAndOrder>
+                                    <Price>R$ {burgue.price}</Price>
+                                    {/* <Order href={burgue.whatsapp} target="_blank"><i className="fa-brands fa-whatsapp"></i></Order> */}
+                                    <button type="button">Adicionar ao pedido</button>
                                 </div>
                             </Food>
                         </div>

@@ -1,17 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { ControlledAccordions } from "./components/navbar"
+import { Home } from "./pages/home"
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <ControlledAccordions />
-    }
-  ])
-
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
+      <Home />
     </>
   )
 }

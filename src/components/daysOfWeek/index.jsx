@@ -13,6 +13,7 @@ const DaysOfWeek = () => {
     const date = new Date();
     let day = date.getDay();
     
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const week = () => {
        switch (day) {
         case 0:
@@ -43,7 +44,7 @@ const DaysOfWeek = () => {
 
     useEffect(() => {
         week()
-    }, [day])
+    }, [day, week])
 
     return (
         <>

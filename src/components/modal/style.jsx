@@ -5,10 +5,10 @@ export const OpenAndClose = styled.div`
 `
 
 export const NameAndSoon = styled.div`
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
 
     h2{
         width: 100%;

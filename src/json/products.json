@@ -1,48 +1,9 @@
 {
     "data": [
         {
-            "snacks": [
-                {
-                    "id": 1,
-                    "name": "Dadinhos de Batata c/ Queijo",
-                    "price":  "23,00",
-                    "ingredients": "15 unidades + maionese de bacon",
-                    "type": "snacks",
-                    "image": "https://i.postimg.cc/Y4xQNCb2/onion-rings-0.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+Dadinhos+de+Batata+c%2F+Queijo"
-                },
-                {
-                    "id": 2,
-                    "name": "Porcao de Onion Rings",
-                    "price": "23,00",
-                    "ingredients": "10 unidades + molho",
-                    "type": "snacks",
-                    "image": "https://i.postimg.cc/Y4xQNCb2/onion-rings-0.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+uma+Porcao+de+Onion+Rings"
-                },
-                {
-                    "id": 3,
-                    "name": "Porcao de Batata Hash Brown",
-                    "price": "29,99",
-                    "ingredients": "12 unidades + maionese de Bacon",
-                    "type": "snacks",
-                    "image": "https://i.postimg.cc/Y4xQNCb2/onion-rings-0.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+uma+Porcao+de+Batata+Hash+Brown"
-                },
-                {
-                    "id": 4,
-                    "name": "Camarão empanado",
-                    "price": "45,00",
-                    "ingredients": "250 Gr camarão 7 barbas empanado + salada + molho",
-                    "type": "snacks" ,
-                    "image": "https://i.postimg.cc/Y4xQNCb2/onion-rings-0.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+Camar%C3%A3o+empanado"
-                }
-            ],
-
             "drinks": [
                 {
-                    "id": 5,
+                    "id": 1,
                     "name": "Refrigerante Lata",
                     "price":  "5,00",
                     "brand": "Coca-cola, coca cola zero, guaraná, Fanta uva, Fanta laranja, sprite, soda limonada.",
@@ -51,7 +12,7 @@
                     "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Refrigerante+Lata"
                 },
                 {
-                    "id": 6,
+                    "id": 2,
                     "name": "Refrigerante 600 ml",
                     "price": "7,00",
                     "brand": "Pepsi cola, guaraná antártica, sukita laranja",
@@ -60,37 +21,64 @@
                     "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Refrigerante+600ml"
                 },
                 {
-                    "id": 7,
-                    "name": "Refrigerante 2 litros",
-                    "price": "10,00",
-                    "brand": "Guaraná antártica, Pepsi cola, sukita laranja, sukita uva",
+                    "id": 3,
+                    "name": "Guaraná Antartica de 1 litro",
+                    "price": "9,00",
+                    "brand": "Guaraná antártica",
                     "type": "drinks",
                     "image": "https://i.postimg.cc/G9gJS9rH/coca-2l.jpg",
                     "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Refrigerante+2+litros"
                 },
                 {
-                    "id": 8,
-                    "name": "RedBul tradicional/ Sabores",
-                    "price": "13,00",
-                    "brand": "RedBul 250 ml",
+                    "id": 4,
+                    "name": "Guaraná Antartica de 2 litros",
+                    "price": "12,00",
+                    "brand": "Guaraná antártica",
                     "type": "drinks",
-                    "image": "https://i.postimg.cc/rDx1mJ4r/redbull.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+RedBul"
+                    "image": "https://i.postimg.cc/G9gJS9rH/coca-2l.jpg",
+                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Refrigerante+2+litros"
+                },
+                {
+                    "id": 5,
+                    "name": "Coca cola 1 litro de Vidro",
+                    "price": "8,00",
+                    "brand": "Coca Cola",
+                    "type": "drinks",
+                    "image": "https://i.postimg.cc/G9gJS9rH/coca-2l.jpg",
+                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Refrigerante+2+litros"
+                },
+                {
+                    "id": 6,
+                    "name": "Coca Cola 2 litros",
+                    "price": "14,00",
+                    "brand": "Coca Cola",
+                    "type": "drinks",
+                    "image": "https://i.postimg.cc/G9gJS9rH/coca-2l.jpg",
+                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Refrigerante+2+litros"
                 }
             ],
 
-            "burguers": [
+            "burguersTraditional": [
                 {
-                    "id": 9,
+                    "id": 7,
                     "name": "Cheese Frango",
-                    "price":  "20,00",
+                    "price": 20,
                     "ingredients": "Pão,queijo, presunto, tiras de frango, bacon , salada, milho, batata palha, banana, purê e batata Frita.",
                     "type": "burguer",
                     "image": "https://i.postimg.cc/G8hGXn5F/lanches.jpg",
                     "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Cheese+Frango"
                 },
                 {
-                    "id": 10,
+                    "id": 8,
+                    "name": "Cheese Bacon",
+                    "price":  "20,00",
+                    "ingredients": "Pão, Carne, Mussarela, Presunto, Banana, Purê De Batata, Alface, Tomate, Milho, Batata Palha, Bacon e Batata Frita",
+                    "type": "burguer",
+                    "image": "https://i.postimg.cc/G8hGXn5F/lanches.jpg",
+                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Cheese+Frango"
+                },
+                {
+                    "id": 9,
                     "name": "Cheese Tudo",
                     "price": "20,00",
                     "ingredients": "Pão, 2x bife tradicional, queijo, presunto, ovo, bacon , salada, milho, batata palha, banana, purê e Batata Frita.",
@@ -99,7 +87,7 @@
                     "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Cheese+Tudo"
                 },
                 {
-                    "id": 11,
+                    "id": 10,
                     "name": "Cheese Picanha",
                     "price": "20,00",
                     "ingredients": "Pão, bife de picanha 90Gr queijo, presunto, bacon, ovo, salada, milho, batata palha, banana, purê e Batata Frita.",
@@ -108,7 +96,7 @@
                     "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Cheese+Picanha"
                 },
                 {
-                    "id": 12,
+                    "id": 11,
                     "name": "Pesadelo",
                     "price": "24,00",
                     "ingredients": "Pão, 2x bife tradicional, 2 xqueijo, 2x presunto, 2x ovo, 2x bacon , salada, milho, batata palha, banana, purê e Batata Frita.",
@@ -117,73 +105,34 @@
                     "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Pesadelo" 
                 }
             ],
-            
-            "portions": [
+
+            "burguersGourmet": [
+                {
+                    "id": 12,
+                    "name": "Ollie Burguer Tradicional",
+                    "price": 28,
+                    "ingredients": "Carne Bovina 150g, Pão Brioche Especial, Cheddar Fatia, Alface, Tomate, Molho Grill, Batata Frita",
+                    "type": "burguer",
+                    "image": "https://i.postimg.cc/G8hGXn5F/lanches.jpg",
+                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Cheese+Frango"
+                },
                 {
                     "id": 13,
-                    "name": "Porção carne de sol",
-                    "price":  "75,00",
-                    "ingredients": "1/2 Kg carne de sol + companhamento + salada",
-                    "type": "portions",
-                    "image": "https://i.postimg.cc/DmwPgL99/porcao.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+uma+Por%C3%A7%C3%A3o+carne+de+sol"
+                    "name": "Ollie Gold Burguer",
+                    "price": 30,
+                    "ingredients": "Carne Bovina 150g, Pão Brioche Especial, Cheddar Fatia, Alface, Tomate, Molho Grill, Batata Frita, Mussarela e Cebola Caramelizada",
+                    "type": "burguer",
+                    "image": "https://i.postimg.cc/G8hGXn5F/lanches.jpg",
+                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Cheese+Frango"
                 },
                 {
                     "id": 14,
-                    "name": "Porção Mista",
-                    "price": "75,00",
-                    "ingredients": "1/2 Kg ( alcatra, frango e calabresa ) + acompanhamentos + salada",
-                    "type": "portions",
-                    "image": "https://i.postimg.cc/DmwPgL99/porcao.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+uma+Por%C3%A7%C3%A3o+Mista"
-                },
-                {
-                    "id": 15,
-                    "name": "Porção de Picanha",
-                    "price": "115,00",
-                    "ingredients": "1/2 Kg  Picanha + acompanhamentos + salada",
-                    "type": "portions",
-                    "image": "https://i.postimg.cc/DmwPgL99/porcao.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+uma+Por%C3%A7%C3%A3o+de+Picanha"
-                },
-                {
-                    "id": 16,
-                    "name": "Porção de Filé mignon",
-                    "price": "100,00",
-                    "ingredients": "1/2 Kg  Filé mignon + acompanhamentos + salada",
-                    "type": "portions",
-                    "image": "https://i.postimg.cc/DmwPgL99/porcao.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+uma+Por%C3%A7%C3%A3o+de+Fil%C3%A9+Mignon" 
-                }
-            ],
-
-            "plate-meats": [
-                {
-                    "id": 17,
-                    "name": "Picanha na Chapa",
-                    "price":  "140,00",
-                    "ingredients": "1/2 Kg picanha em Bifes; Guarniçao arroz; Guarniçao farofa de manteiga; Guarniçao vinagrete",
-                    "type": "combos",
-                    "image": "https://i.postimg.cc/2VPdrJ1Y/file-mino.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+uma+Picanha+na+Chapa"
-                },
-                {
-                    "id": 18,
-                    "name": "Alcatra na Chapa",
-                    "price": "120,00",
-                    "ingredients": "1/2 Kg Alcatra em Bifes, Guarniçao arroz, Guarniçao farofa de manteiga, Guarniçao vinagrete.",
-                    "type": "combos",
-                    "image": "https://i.postimg.cc/2VPdrJ1Y/file-mino.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+uma+Alcatra+na+Chapa"
-                },
-                {
-                    "id": 19,
-                    "name": "Filé Mignon na Chapa",
-                    "price": "120,00",
-                    "ingredients": "1/2 Kg filé mignon em bifes, Guarniçao arroz, Guarniçao farofa de manteiga, Guarniçao vinagrete.",
-                    "type": "combos",
-                    "image": "https://i.postimg.cc/2VPdrJ1Y/file-mino.jpg",
-                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+Fil%C3%A9+Mignon+na+Chapa"
+                    "name": "Ollie Supreme Burguer",
+                    "price": 45,
+                    "ingredients": "Pão Brioche, Blend Bovino 150g, Cheddar Fatia, Alface, Tomate, Molho Grill, Onion Rings e Bacon Defumado.",
+                    "type": "burguer",
+                    "image": "https://i.postimg.cc/G8hGXn5F/lanches.jpg",
+                    "whatsapp": "https://wa.me/5527999092983?text=Ol%C3%A1%2C+queria+fazer+o+pedido+de+um+Cheese+Tudo"
                 }
             ]
         }

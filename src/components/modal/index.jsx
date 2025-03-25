@@ -1,16 +1,12 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import logo from "../../assets/logo.png"
-import { OpenAndClose, NameAndSoon, Whatsapp, Location, ListServices, Caption, DeliveryTime, OpeningHours, Line, Delivery, RemoveStore, MotoDelivery, Strong } from "./style";
+import { NameAndSoon, Whatsapp, Location, ListServices, Caption, DeliveryTime, OpeningHours, Line, Delivery, RemoveStore, MotoDelivery, Strong } from "./style";
 import { DaysOfWeek } from "../daysOfWeek";
-import { CloseAndOpen } from "./closeAndOpen";
 
 const Modall = () => {
     return (
         <>
-            <OpenAndClose>
-                <CloseAndOpen></CloseAndOpen>
-            </OpenAndClose>
-
             <NameAndSoon>
                 <h2>Burguer e Cia</h2>
                 <img src={logo}></img>

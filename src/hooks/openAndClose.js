@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 const openingHours = () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [isOpen, setIsOpen] = useState(false);
   
     const checkOpeningHours = () => {
@@ -17,6 +18,7 @@ const openingHours = () => {
       }
     };
   
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
       checkOpeningHours();
       const intervalId = setInterval(() => {
