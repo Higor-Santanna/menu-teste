@@ -5,7 +5,15 @@ import { Food, Price, Title} from "../productsStyle/style"
 import { AppContext } from "../../context/App.context"
 
 const AllBurguers = () => {
-    const { burguer, setBurguer } = useContext(AppContext)
+    const { burguer, setBurguer, setCartItems } = useContext(AppContext)
+
+    const getAddCart = (item) => {
+        setCartItems((prevCartItems) => {
+            const updatedCart = [...prevCartItems, item];
+            console.log("Carrinho atualizado:", updatedCart); // Verifique se os itens estão sendo adicionados
+            return updatedCart;
+        });
+    }
 
     useEffect(() => {
         const products = productsJson.data[0].burguersTraditional
@@ -26,7 +34,7 @@ const AllBurguers = () => {
                                     <p >{burgue.ingredients}</p>
                                     <Price>R$ {burgue.price}</Price>
                                     {/* <Order href={burgue.whatsapp} target="_blank"><i className="fa-brands fa-whatsapp"></i></Order> */}
-                                    <button type="button">Adicionar ao pedido</button>
+                                    <button type="button" onClick={() => getAddCart(burgue)}>Adicionar ao pedido</button>
                                 </div>
                             </Food>
                         </div>

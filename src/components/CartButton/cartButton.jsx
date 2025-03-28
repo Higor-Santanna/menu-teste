@@ -2,7 +2,7 @@
 
 const CartButton = () => {
     return (
-        <button>
+        <button >
             <i className="fa-solid fa-cart-shopping"></i>
         </button>
     );

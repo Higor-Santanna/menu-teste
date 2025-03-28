@@ -7,16 +7,24 @@ const SearchBar = () => {
     const { setBurguer } = useContext(AppContext);
     const [ searchValue, setSearchValue ] = useState('');
 
-    const handleSearch = ( event ) => {
-        event.preventDefault();
-        
-        const categories = productsJson.data[0]
-        const allProducts = Object.values(categories).flat();
+    const categories = productsJson.data[0]
+    const allProducts = Object.values(categories).flat();
 
-        const results = allProducts.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase()))
+    const handleSearch = ( event ) => { event.preventDefault()};
 
-        setBurguer(results)
-    }
+    const handleChange = ({ target }) => {
+        const value = target.value.toLowerCase();
+        setSearchValue(value);
+
+        if (value.trim() === "") {
+            setBurguer(allProducts); // Se estiver vazio, mostra todos os produtos
+        } else {
+            const filteredProducts = allProducts.filter((product) =>
+                product.name.toLowerCase().includes(value)
+            );
+            setBurguer(filteredProducts);
+        }
+    };
 
     return (
         <>
@@ -25,7 +33,7 @@ const SearchBar = () => {
                     type="search"
                     value={searchValue} 
                     placeholder="Buscar lanches" 
-                    onChange={ ({ target }) => setSearchValue(target.value) } 
+                    onChange={ handleChange } 
                     required/>
 
                 <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>

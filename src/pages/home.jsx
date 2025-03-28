@@ -1,13 +1,15 @@
 import { Header } from "../components/header";
 import { AllBurguers } from "../components/allBurguers";
-import { Provider } from "../context/Provider";
+import { Cart } from "../components/Cart/cart";
+//import { Provider } from "../context/Provider";
 
 const Home = () => {
     return(
-        <Provider>
+        <>
             <Header />
             <AllBurguers />
-        </Provider>
+            <Cart />
+        </>
     )
 };
 

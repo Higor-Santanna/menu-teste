@@ -4,10 +4,14 @@ import propTypes from "prop-types"
 import { AppContext } from "./App.context";
 
 const Provider = ({ children }) => {
-    const [burguer, setBurguer] = useState([])
+    const [burguer, setBurguer] = useState([]);
+    const [cartItems, setCartItems] = useState([])
 
     const value = {
-        burguer, setBurguer
+        burguer, 
+        setBurguer,
+        cartItems,
+        setCartItems
     }
 
     return(
