@@ -33,7 +33,6 @@ const AllBurguers = () => {
                                     <h3>{burgue.name}</h3>
                                     <p >{burgue.ingredients}</p>
                                     <Price>R$ {burgue.price}</Price>
-                                    {/* <Order href={burgue.whatsapp} target="_blank"><i className="fa-brands fa-whatsapp"></i></Order> */}
                                     <button type="button" onClick={() => getAddCart(burgue)}>Adicionar ao pedido</button>
                                 </div>
                             </Food>

@@ -23,6 +23,10 @@ export const MenuNameLogo = styled.div`
         height: 64px;
         margin-left: 22px;
         border-radius: 4px;
+
+        @media(max-width: 500px){
+            margin-left: 10px;
+        }
     }
 
     h2{
@@ -51,6 +55,10 @@ export const MenuDeliveryTime = styled.div`
     border-radius: 4px;
     padding: 8px 12px;
     margin: 15px 22px;
+
+    @media(max-width: 500px){
+        margin: 15px 10px;
+    }
 `
 
 export const DivModal = styled.div`
@@ -78,4 +86,14 @@ export const Line = styled.div`
     height: 1px;
     margin-top: 10px;
     background-color: #9e9e9e;
+`
+export const SearchCart = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin: 0 22px;
+    padding-bottom: 15px;
+
+    @media(max-width: 500px){
+        margin: 0 10px;
+    }
 `

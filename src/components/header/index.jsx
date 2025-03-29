@@ -4,7 +4,7 @@ import Modal from "react-modal"
 import capa from "../../assets/burguerDesktop.png"
 import logo from "../../assets/logo.png"
 import { Modall } from "../modal"
-import { MenuCapa, MenuNameLogo, MenuDeliveryTime, DivModal, Line } from "./style"
+import { MenuCapa, MenuNameLogo, MenuDeliveryTime, DivModal, Line, SearchCart } from "./style"
 import { OpenAndClose } from "../OpenAndClose"
 import { SearchBar } from "../SearchBar/searchBar"
 import { CartButton } from "../CartButton/cartButton"
@@ -64,10 +64,10 @@ const Header = () => {
                 <i className="fa-solid fa-motorcycle"></i>
                 <p>Entrega: R$ 2,00 | 40 - 70min</p>
             </MenuDeliveryTime>
-            <div>
+            <SearchCart>
                 <SearchBar></SearchBar>
                 <CartButton></CartButton>
-            </div>
+            </SearchCart>
         </>
     )
 }

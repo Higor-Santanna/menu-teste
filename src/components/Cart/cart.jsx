@@ -1,10 +1,11 @@
 // eslint-disable-next-line no-unused-vars
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { CartItem } from "../CartItem/cartItem";
 import { AppContext } from "../../context/App.context";
+import { CartDiv, CloseButton, Div, Overlay } from "./styleCart";
 
 const Cart = () => {
-    const { cartItems } = useContext(AppContext);
+    const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext);
 
     const totalPrice = cartItems.reduce((acc, item) => {
         return item.price + acc
@@ -28,13 +29,19 @@ const Cart = () => {
         window.open(whatsappUrl, "_blank");
     };
 
-    return(
+    return (
         <>
-            <CartItem></CartItem>
-            <div>
-                <p>Total: {totalPrice}</p>
-                <button onClick={checkout}>Finalizar Compra</button>
-            </div>
+            {isCartVisible && <Overlay onClick={() => setIsCartVisible(false)} />}
+            <CartDiv isVisible={isCartVisible}>
+                <CloseButton onClick={() => setIsCartVisible(false)}>
+                    <i className="fa-solid fa-circle-xmark"></i>
+                </CloseButton>
+                <CartItem />
+                <Div>
+                    <p>Total: {totalPrice}</p>
+                    <button onClick={checkout}>Finalizar Compra</button>
+                </Div>
+            </CartDiv>
         </>
     )
 };

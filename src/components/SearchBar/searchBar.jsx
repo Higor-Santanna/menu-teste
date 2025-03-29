@@ -2,6 +2,7 @@
 import React, { useState, useContext } from "react";
 import productsJson from "../../json/products.json"
 import { AppContext } from "../../context/App.context";
+import { SearchButton, SearchForm, SearchInput } from "./styleSearchBar";
 
 const SearchBar = () => {
     const { setBurguer } = useContext(AppContext);
@@ -28,16 +29,16 @@ const SearchBar = () => {
 
     return (
         <>
-            <form onSubmit={handleSearch}>
-                <input 
+            <SearchForm onSubmit={handleSearch}>
+                <SearchInput 
                     type="search"
                     value={searchValue} 
                     placeholder="Buscar lanches" 
                     onChange={ handleChange } 
                     required/>
 
-                <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+                <SearchButton type="submit"><i className="fa-solid fa-magnifying-glass"></i></SearchButton>
+            </SearchForm>
         </>
     );
 };

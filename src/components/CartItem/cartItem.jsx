@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../../context/App.context";
+import { ItemCart, ItemImg, ItemPrice, ItemButton, ItemDiv, ItemTitle, EmptyCart } from "./styleCartItem";
 
 const CartItem = () => {
     const { cartItems } = useContext(AppContext)
@@ -8,22 +9,22 @@ const CartItem = () => {
         <>
             {cartItems.length > 0 ? (
                 <ul>
-                    {cartItems.map((item) => (
-                        <li key={item.id}>
-                            <img src={item.image} alt="Imagem do lanche" />
-                            <div>
-                                <h3>{item.name}</h3>
-                                <p>{item.ingredients}</p>
-                                <p>R$ {item.price}</p>
-                            </div>
-                            <button type="button">
-                                <i className="fa-solid fa-trash"></i>
-                            </button>
-                        </li>
+                    {cartItems.map((item, index) => (
+                        <ItemCart key={index}>
+                            <ItemImg src={item.image} alt="Imagem do lanche" />
+                            <ItemDiv>
+                                <ItemTitle>{item.name}</ItemTitle>
+                                <ItemPrice>R$ {item.price}</ItemPrice>
+
+                                <ItemButton type="button">
+                                    <i className="fa-solid fa-trash"></i>
+                                </ItemButton>
+                            </ItemDiv>
+                        </ItemCart>
                     ))}
                 </ul>
             ) : (
-                <p> Carrinho está vazio </p>
+                <EmptyCart> Carrinho está vazio </EmptyCart>
             )}
         </>
     )

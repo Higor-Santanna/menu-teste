@@ -1,10 +1,15 @@
-
+import { useContext } from "react";
+import { AppContext } from "../../context/App.context";
+import { ButtonCart, CartStatus } from "./styleCartButton";
 
 const CartButton = () => {
+    const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext)
+
     return (
-        <button >
+        <ButtonCart type="button" onClick={() => setIsCartVisible(!isCartVisible)}>
             <i className="fa-solid fa-cart-shopping"></i>
-        </button>
+            <CartStatus>{cartItems.length}</CartStatus>
+        </ButtonCart>
     );
 };
 
